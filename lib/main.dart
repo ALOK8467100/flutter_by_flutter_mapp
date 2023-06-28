@@ -2,24 +2,20 @@
 
 import 'package:flutter/material.dart';
 
-// from here every flutter App will run
 void main() {
   runApp(const MyApp()); // MyApp is the default app name of our App
 }
 
-// here we use StatelessWidget , later we also use StatefulWidget
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // for removing banner we use this one
       home: Scaffold(
-        // appBar is argument and AppBar is Widget
         appBar: AppBar(
-          // by appBar: AppBar()  we get this blur color navigation
-          title: Text(
-              "Hello App "), // here we use Text Widget for writing some text
+          title: Text("Hello App "),
         ),
       ),
     );
