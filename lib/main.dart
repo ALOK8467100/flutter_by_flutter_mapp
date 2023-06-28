@@ -14,7 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
+      home: Scaffold(
+        // appBar is argument and AppBar is Widget
+        appBar: AppBar(
+          // by appBar: AppBar()  we get this blur color navigation
+          title: Text(
+              "Hello App "), // here we use Text Widget for writing some text
+        ),
+      ),
     );
   }
 }
