@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarItem(
                 label: "Settings", icon: Icon(Icons.settings)),
             BottomNavigationBarItem(
-                label: "alarm", icon: Icon(Icons.access_alarm)),
+                label: "add home", icon: Icon(Icons.add_home)),
           ],
         ),
       ),
