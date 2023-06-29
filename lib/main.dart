@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: Text("Hello App "),
         ),
         body: Center(
-          // earlier we use text directly inside body now we wrap text with Center widgit
+          // 1
           child: Text("new app"),
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -45,3 +45,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*
+1. earlier we use text directly inside body now we wrap text with Center widgit
+2. now to remove again in initial code we use Refactor ( ctrl + shift + R ) and set the required Widget 
+3. format document by ctrl + shift + B. 
+
+ */
