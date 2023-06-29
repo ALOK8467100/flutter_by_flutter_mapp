@@ -20,7 +20,13 @@ class MyApp extends StatelessWidget {
         body: Text("new app"),
         bottomNavigationBar: BottomNavigationBar(
           items: [
-            BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
+            BottomNavigationBarItem(
+                label: "Home",
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.amber[800],
+                  size: 24.0,
+                )),
             BottomNavigationBarItem(
                 label: "Settings", icon: Icon(Icons.settings)),
             BottomNavigationBarItem(
@@ -31,11 +37,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-/* In BottomNavigationBar we have to assign at least two items or more than two 
-    in side items we use BottomNavigationBarItem(),
-    inside BottomNavigationBarItem() we use label and icon
-    in label we write the name of that function as text
-
-    in icon we use icon: Icon(Icon.required field)
-    in required field place we put various logo which work according to its functionality
+/* 
+    In icon Icon(Icons.required setting) is needed.
+    like
+    icon symbol
+    icon color
+    icon size etc
 */
