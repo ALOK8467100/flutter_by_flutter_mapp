@@ -18,8 +18,11 @@ class MyApp extends StatelessWidget {
           title: Text("Hello App "),
         ),
         body: Center(
-          // 1
-          child: Text("new app"),
+          child: ElevatedButton(
+            // 1.
+            onPressed: () {},
+            child: Text("Click on"),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
@@ -47,8 +50,14 @@ class MyApp extends StatelessWidget {
 }
 
 /*
-1. earlier we use text directly inside body now we wrap text with Center widgit
-2. now to remove again in initial code we use Refactor ( ctrl + shift + R ) and set the required Widget 
-3. format document by ctrl + shift + B. 
+mainly three type of button
+text button
+outline button
+Elevated button 
 
+So we use Elevated button
+inside Elevated button we have to passs two argument 
+one is onPressed and second is child
+in onPressed we have to pass null function,
+so passing null function we only use this (){} to it.  
  */

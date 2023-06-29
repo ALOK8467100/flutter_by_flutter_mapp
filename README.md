@@ -1,16 +1,17 @@
 # flutter_by_flutter_mapp
 
-A new Flutter project.
+Elevated Button
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+mainly three type of button
+text button
+outline button
+Elevated button 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+So we use Elevated button
+inside Elevated button we have to passs two argument 
+one is onPressed and second is child
+in onPressed we have to pass null function,
+so passing null function we only use this (){} to it.  
