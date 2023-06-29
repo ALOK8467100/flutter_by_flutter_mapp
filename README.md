@@ -2,6 +2,6 @@
 
 ## Print
 
-+ In print we use inside onPressed {} 
++ We use print inside onPressed {} 
 + in inside we write print(" return something")
 + remember print accept string only
