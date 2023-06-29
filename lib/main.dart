@@ -21,16 +21,21 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(
-                label: "Home",
-                icon: Icon(
-                  Icons.home,
-                  color: Colors.amber[800],
-                  size: 24.0,
-                )),
+              label: "Home",
+              icon: Icon(
+                Icons.home,
+                color: Colors.amber[800],
+                size: 24.0,
+              ),
+            ),
             BottomNavigationBarItem(
-                label: "Settings", icon: Icon(Icons.settings)),
+              label: "Settings",
+              icon: Icon(Icons.settings),
+            ),
             BottomNavigationBarItem(
-                label: "add home", icon: Icon(Icons.add_home)),
+              label: "add home",
+              icon: Icon(Icons.add_home),
+            ),
           ],
         ),
       ),
