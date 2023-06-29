@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hello App "),
         ),
-        body: Text("new app"),
+        body: Center(
+          // earlier we use text directly inside body now we wrap text with Center widgit
+          child: Text("new app"),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(
@@ -42,10 +45,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-/* 
-    In icon Icon(Icons.required setting) is needed.
-    like
-    icon symbol
-    icon color
-    icon size etc
-*/
