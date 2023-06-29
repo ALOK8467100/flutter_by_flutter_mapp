@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             // 1.
-            onPressed: () {},
+            onPressed: () {
+              print(" print Something");
+            },
             child: Text("Click on"),
           ),
         ),
@@ -50,14 +52,7 @@ class MyApp extends StatelessWidget {
 }
 
 /*
-mainly three type of button
-text button
-outline button
-Elevated button 
-
-So we use Elevated button
-inside Elevated button we have to passs two argument 
-one is onPressed and second is child
-in onPressed we have to pass null function,
-so passing null function we only use this (){} to it.  
+In print we use inside onPressed {} 
+in inside we write print(" return something")
+remember print accept string only
  */
