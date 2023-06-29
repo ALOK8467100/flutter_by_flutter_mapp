@@ -12,7 +12,7 @@ Elevated button
 
 So we use Elevated button.
 ___
-inside Elevated button we have to passs two argument .
-one is onPressed and second is child.
-in onPressed we have to pass null function.
-so passing null function we only use this (){} to it.  
++ inside Elevated button we have to passs two argument .
++ one is onPressed and second is child.
++ in onPressed we have to pass null function.
++ so passing null function we only use this (){} to it.  
