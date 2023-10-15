@@ -1,25 +1,32 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, must_be_immutable
 
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  MyApp({Key? key}) : super(key: key);
+  // we create a variable name Click,
+  //because we create a variable so every const must be removed.
+  String buttonName = "Click";
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hello App "),
+          title: Text("Hello App I a am ALok "),
         ),
         body: Center(
-          // earlier we use text directly inside body now we wrap text with Center widgit
-          child: Text("new app"),
+          child: ElevatedButton(
+            // 1.
+            onPressed: () {
+              print(" print Something on it");
+            },
+            child: Text(buttonName),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
@@ -33,11 +40,14 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               label: "Settings",
-              icon: Icon(Icons.settings),
+              icon: Icon(
+                Icons.settings,
+                color: Colors.yellow,
+              ),
             ),
             BottomNavigationBarItem(
-              label: "add home",
-              icon: Icon(Icons.add_home),
+              label: "time",
+              icon: Icon(Icons.access_time),
             ),
           ],
         ),
@@ -45,3 +55,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*
+In print we use inside onPressed {} 
+in inside we write print(" return something")
+remember print accept string only
+ */
