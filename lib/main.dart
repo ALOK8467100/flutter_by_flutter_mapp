@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hello App ia am ALok "),
+          title: Text("Hello App I a am ALok "),
         ),
         body: Center(
           child: ElevatedButton(
